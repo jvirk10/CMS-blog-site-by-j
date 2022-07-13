@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS-style-tech-blog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="/">CMS-Style-Tech-Blog</a>
+            </h1>
+            <nav>
+                <span><a href="/">HOME</a></span> 
+                {{#if loggedIn}}
+                <a href="/dashboard">DASHBOARD</a>
+                <button id="logout" class="btn-no-style">LOGOUT</button>
+                {{else}}
+                <a href="/login">LOGIN</a>
+                {{/if}}
+            </nav>
+
+        </header>
+
+        <main>
+            {{{ body }}}
+        </main>
+        
+    </div>
+    <footer>
+        Thanks for visiting my blog application page !
+    </footer>    
+
+    {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
+    {{/if}}
+
+</body>
+
+
+</html>
