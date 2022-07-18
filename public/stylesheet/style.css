@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    padding: 2%;
+    margin: 0;
+    /* display: flex;
+    flex-direction: column; */
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(138, 0, 0);
+    background-color: rgb(225, 225, 225);
+    /* border: 2px solid; */
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+  
+a:hover {
+    color: #343434;
+}
+input {
+    padding:1%;
+    margin:auto;
+    
+}
+.button {
+    border: 1%;
+    padding: 1%;
+    font-weight: bold;
+    color:rgb(78, 0, 0);
+    background-color: rgb(255, 244, 244);
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #c11425;
+}
+.wrapper {
+    width: 100%;
+    /* min-height: 100%;
+    max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    /* border-bottom: 1px solid #ccc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    color: rgb(255, 255, 255);
+    background-color: #b53434ba;
+}
+nav {
+    padding: 1.4rem;
+    text-align: right;
+    white-space: pre;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.card-body {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+  
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+  
+.comment:nth-child(odd) {
+    background-color: #fff5eb;
+}
+  
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+  
+.create-post-form input {
+    width: 300px;
+  }
+  
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+.delete-post-btn {
+    background-color: #960000d5;
+}
+  
+.delete-post-btn:hover {
+    background-color: #ff643d;
+}
+  
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.post .title span {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    color: #4c0000;
+}
+span {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    color: #4c0000;
+}
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+p {
+    margin-top: 0;
+    font-family: cursive;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+}
+footer{
+    align-items: center;
+    background-color: #b53434ba;
+    color: #fff5eb;
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+    padding: auto;
+    
+}
